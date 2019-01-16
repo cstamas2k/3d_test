@@ -84,7 +84,7 @@ int main(int argc, char* argv[]) {
 		for (auto meshes : v_world) {
 
 			//3d math stuff
-			for (auto tri : meshCube.tris) {
+			for (auto tri : meshes.tris) {
 				triangle triProjected, triTransformed, triViewed;
 
 				triTransformed.p[0] = engine.mat_multiplyVec(matWorld, tri.p[0]);
